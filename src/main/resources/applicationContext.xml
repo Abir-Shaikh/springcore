@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    payment Implementations-->
+    <bean id="UPIPaymentService" class="Service.GrandPay.UPIPaymentService"></bean>
+    <bean id="CreditCardPaymentService" class="Service.GrandPay.CreditCardPaymentService"></bean>
+
+<!--    orderService with dependencies -->
+    <bean id="OrderServiceCard" class="Service.GrandPay.OrderService">
+        <property name="paymentService" ref="CreditCardPaymentService"></property>
+    </bean>
+
+    <bean id="OrderServiceUPI" class="Service.GrandPay.OrderService">
+    <property name="paymentService" ref="UPIPaymentService"></property>
+    </bean>
+
+</beans>
