@@ -11,4 +11,14 @@
     <bean id="mybean1" class="Service.MeetingService">
     </bean>
 
+    <bean id="EmailNotificationService" class="Service.LooseCoupling.EmailNotificationService"></bean>
+    <bean id="SMSNotificationService" class="Service.LooseCoupling.SMSNotificationService"></bean>
+    <bean id="UserServiceEmail" class="Service.LooseCoupling.UserService">
+        <property name="notificationService" ref="EmailNotificationService"></property>
+    </bean>
+
+    <bean id="UserServiceSMS" class="Service.LooseCoupling.UserService">
+        <property name="notificationService" ref="SMSNotificationService"></property>
+    </bean>
+
 </beans>

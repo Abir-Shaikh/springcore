@@ -14,5 +14,7 @@ public class MainApp {
 
         MeetingService meetingService = (MeetingService) context.getBean("mybean1");
         meetingService.meetingService();
+
+
     }
 }

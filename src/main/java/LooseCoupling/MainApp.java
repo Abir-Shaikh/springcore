@@ -8,3 +8,5 @@ public class MainApp {
         userService.notifyUser("ok we gotcha ya!!");
     }
 }
+
+//user service needs notification services dependency
