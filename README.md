@@ -36,7 +36,7 @@ src/
 
 ## 🛠 Technologies Used
 
-- Java 24
+- Java 25
 - Spring Framework (Core)
 - Maven
 - IntelliJ IDEA / VS Code
