@@ -1,6 +1,7 @@
 package SpringAnnotations.Message;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 @Component
 public class SMSNotificationService implements NotificationServices {
