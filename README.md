@@ -5,7 +5,7 @@ This project demonstrates the basics of **Spring Framework Core**, including:
 - Bean creation
 - Dependency Injection (DI)
 - ApplicationContext usage
-- Simple service classes
+- Simple service class
 
 ---
 
